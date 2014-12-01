@@ -1,0 +1,77 @@
+ArcPad Studio Build Log
+================================================================================
+ Project Type : APPLET
+  Output Path : K:\Invasivesdb.compile\ArcPad Applet
+       Encode : No
+     Reformat : No
+Input Project : K:\Invasivesdb.transfer\ArcPad applet\TNC_Invasives.apa
+       Output : K:\Invasivesdb.compile\ArcPad Applet\TNC_Invasives.apa
+
+
+Processing <SCRIPT> elements and event handlers
+--------------------------------------------------------------------------------
+Using default scripting language : 'VBScript'
+Warning: Scripting language not specifed in any <SCRIPT> elements, setting language="VBScript"/>
+	Checking scripts for <APPLET> event handlers, language="VBScript"
+		'onload' script syntax ok
+		'onclick' script syntax ok
+		'onclick' script syntax ok
+		'onclick' script syntax ok
+		'onclick' script syntax ok
+Found 1 <SCRIPT> element(s)
+
+4561 characters imbedded from K:\Invasivesdb.transfer\ArcPad applet\TNC_Invasives.vbs
+
+Processing images
+--------------------------------------------------------------------------------
+Found 5 element(s) with 'image' attribute
+
+<DEPENDENCY file="database.ico"/> added : image= only supports BMP images for imbeddeding.
+<DEPENDENCY file="onoff32x32.ico"/> added : image= only supports BMP images for imbeddeding.
+<DEPENDENCY file="occur32x32.ico"/> added : image= only supports BMP images for imbeddeding.
+<DEPENDENCY file="assess32x32.ico"/> added : image= only supports BMP images for imbeddeding.
+<DEPENDENCY file="treat32x32.ico"/> added : image= only supports BMP images for imbeddeding.
+
+Processing <FORMS>
+--------------------------------------------------------------------------------
+Found 0 <FORMS> element(s)
+================================================================================
+Compile completed with 1 warning(s)
+--------------------------------------------------------------------------------
+
+Found 5 <DEPENDENCY> elements
+<DEPENDENCY file="database.ico"/> : Filename added project file list
+<DEPENDENCY file="onoff32x32.ico"/> : Filename added project file list
+<DEPENDENCY file="occur32x32.ico"/> : Filename added project file list
+<DEPENDENCY file="assess32x32.ico"/> : Filename added project file list
+<DEPENDENCY file="treat32x32.ico"/> : Filename added project file list
+--------------------------------------------------------------------------------
+
+Copying associated files to output path :-
+
+K:\Invasivesdb.transfer\ArcPad applet\database.ico -> K:\Invasivesdb.compile\ArcPad Applet\database.ico
+K:\Invasivesdb.transfer\ArcPad applet\onoff32x32.ico -> K:\Invasivesdb.compile\ArcPad Applet\onoff32x32.ico
+K:\Invasivesdb.transfer\ArcPad applet\occur32x32.ico -> K:\Invasivesdb.compile\ArcPad Applet\occur32x32.ico
+K:\Invasivesdb.transfer\ArcPad applet\assess32x32.ico -> K:\Invasivesdb.compile\ArcPad Applet\assess32x32.ico
+K:\Invasivesdb.transfer\ArcPad applet\treat32x32.ico -> K:\Invasivesdb.compile\ArcPad Applet\treat32x32.ico
+
+5 of 5 associated file(s) copied to output path
+
+================================================================================
+Project Summary
+--------------------------------------------------------------------------------
+       Project Type : APPLET
+        Output Path : K:\Invasivesdb.compile\ArcPad Applet
+            Encoded : No
+           Warnings : 1
+        Output Size : 282213 bytes (275.6 kb)
+--------------------------------------------------------------------------------
+The following 6 file(s) are required for deployment of your project :
+--------------------------------------------------------------------------------
+K:\Invasivesdb.compile\ArcPad Applet\TNC_Invasives.apa
+K:\Invasivesdb.compile\ArcPad Applet\database.ico
+K:\Invasivesdb.compile\ArcPad Applet\onoff32x32.ico
+K:\Invasivesdb.compile\ArcPad Applet\occur32x32.ico
+K:\Invasivesdb.compile\ArcPad Applet\assess32x32.ico
+K:\Invasivesdb.compile\ArcPad Applet\treat32x32.ico
+================================================================================

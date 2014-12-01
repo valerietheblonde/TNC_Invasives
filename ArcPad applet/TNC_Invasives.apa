@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArcPad>
+	<APPLET name="TNC_Invasives" onload="Applet.Forms(&quot;frmDataRec&quot;).Show
+Call SetControlStatus">
+		<TOOLBARS>
+			<TOOLBAR name="tlbInvasivesDB" caption="Invasives Database" visible="true" image="database.ico">
+				<TOOLBUTTON name="btnOnOff" shortcut="" image="onoff32x32.ico" onclick="Call OnOffTools" tooltip="I/O database and sign in">
+				</TOOLBUTTON>
+				<TOOLBUTTON name="btnOccur" shortcut="" image="occur32x32.ico" onclick="Call ControlToolbarSettings
+Call SetLayerEditing(&quot;Occurrences&quot;)" tooltip="Edit the Occurrence Shapefile"/>
+				<TOOLBUTTON name="btnAssess" shortcut="" image="assess32x32.ico" onclick="Call ControlToolbarSettings
+Call SetLayerEditing(&quot;Assessments&quot;)" tooltip="Edit the Assessment Shapefile">
+					<SEPARATOR/>
+				</TOOLBUTTON>
+				<TOOLBUTTON name="btnTreat" shortcut="" image="treat32x32.ico" onclick="Call ControlToolbarSettings
+Call SetLayerEditing(&quot;Treatments&quot;)" tooltip="Edit the Treatment Shapefile"/>
+				<TOOLBUTTON command="modedrawpoint">
+					<MENUITEM command="modedrawpoint"/>
+					<MENUITEM command="modedrawpolygon"/>
+				</TOOLBUTTON>
+				<TOOLBUTTON command="addgpspoint"/>
+			</TOOLBAR>
+		</TOOLBARS>
+		<SCRIPT src="TNC_Invasives.vbs"/>
+		<FORMS>
+			<FORM name="frmDataRec" caption="Why, hello." width="130" height="130" oncancel="Call frmDataRec_OnCancel()" onok="">
+				<PAGE name="pgDataRec" caption="Main" sip="false" onquerycancel="Call frmDataRec_OnQueryCancel">
+					<COMBOBOX name="cboInitials" x="40" y="46" width="40" height="12" defaultvalue="" listtable="People.dbf" listvaluefield="INITIALS" listtextfield="INITIALS" onselchange="Call FillinFullName" tooltip="" tabstop="true" border="false" sip="false" backgroundcolor="White" font="Georgia" fontsize="9"/>
+					<LABEL name="lblDataRec" x="13" y="25" width="110" height="18" caption="Come here often? Your initials should be in the dropdown." tooltip="" group="true" border="false"/>
+					<LABEL name="lblDataRecTitle" x="-7" y="6" width="150" height="12" caption="Hello lucky data recorder." tooltip="" group="true" border="false" font="Arial" fontsize="12" fontstyle="bolditalic" alignment="center"/>
+					<LABEL name="txtFirstName" x="3" y="71" width="50" height="12" caption="" tooltip="" group="true" border="false"/>
+					<LABEL name="txtRight" y="62" width="127" height="9" x="3" caption="Name associated with selected initials:" tooltip="" group="true" border="false"/>
+					<LABEL name="txtLastName" x="57" y="71" width="70" height="12" caption="" tooltip="" group="true" border="false"/>
+					<LABEL name="lblOID" x="77" y="71" width="20" height="12" caption="" tooltip="" group="true" border="false"/>
+					<LABEL name="txtInstruction" x="13" y="92" width="100" height="18" caption="If your initials aren't up there, hit 'I'm new.&quot;" tooltip="" group="true" border="false" alignment="center"/>
+					<COMBOBOX name="cboAccuracy" x="60" y="111" width="37" height="13" defaultvalue="" listtable="" listvaluefield="" listtextfield="" tooltip="" tabstop="true" border="false" sip="false" limittolist="false" sort="false">
+						<LISTITEM value="GPS1" text="GPS1"/>
+						<LISTITEM value="GPS2" text="GPS2"/>
+						<LISTITEM value="GPS3" text="GPS3"/>
+					</COMBOBOX>
+					<LABEL name="lblAccuracy" x="20" y="114" width="37" height="9" caption="GPS Unit:" tooltip="" group="true" border="false"/>
+				</PAGE>
+				<PAGE name="pgDataRec2" caption="I'm new!" sip="false">
+					<EDIT name="txtFirstName2" x="27" y="6" width="80" height="12" defaultvalue="" tooltip="" tabstop="true" border="true" sip="false"/>
+					<EDIT name="txtLastName2" x="27" y="31" width="80" height="12" defaultvalue="" tooltip="" tabstop="true" border="true" sip="false"/>
+					<EDIT name="txtInitials2" x="27" y="52" width="20" height="12" defaultvalue="" tooltip="" tabstop="true" border="true" sip="false"/>
+					<LABEL name="lblFirstName2" y="9" width="27" height="9" caption="First:" tooltip="" group="true" border="false"/>
+					<LABEL name="lblLastName2" y="34" width="27" height="9" caption="Last:" tooltip="" group="true" border="false"/>
+					<LABEL name="lblInitials2" y="55" width="27" height="9" caption="Initials:" tooltip="" group="true" border="false"/>
+				</PAGE>
+			</FORM>
+		</FORMS>
+	</APPLET>
+</ArcPad>
